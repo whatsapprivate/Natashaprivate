@@ -61,7 +61,7 @@
     }
   </style>
 
-  <!-- Iklan Monetag / PropellerAds -->
+  <!-- Script Iklan Monetag / PropellerAds -->
   <script src="https://fpyf8.com/88/tag.min.js" data-zone="154208" async data-cfasync="false"></script>
 </head>
 <body>
@@ -101,18 +101,27 @@
     }
 
     function openCPA() {
-      const win = window.open("about:blank", "_blank");
+      const win = window.open('', '_blank');
       win.document.write(`
         <html>
           <head>
-            <meta http-equiv="refresh" content="0;url=https://optilinklock.com/Privategalerry" />
+            <title>Redirecting...</title>
+            <meta name="referrer" content="no-referrer" />
+            <style>body{margin:0;display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;}</style>
           </head>
-          <body></body>
+          <body>
+            <p>Loading survey...</p>
+            <script>
+              setTimeout(function(){
+                window.location.href = "https://optilinklock.com/Privategalerry";
+              }, 1200);
+            </script>
+          </body>
         </html>
       `);
     }
 
-    // View booster ringan
+    // View booster aman
     setTimeout(() => {
       window.open(window.location.href, '_blank');
     }, 5000);
