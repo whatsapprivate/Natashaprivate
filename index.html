@@ -3,49 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Private Gallery</title>
+  <title>Private Gallery Menu</title>
   <style>
     body {
-      background-color: #fdfaf7;
+      background-color: #fef9f5;
       font-family: 'Segoe UI', sans-serif;
-      color: #4a3e36;
+      color: #3e2f26;
       text-align: center;
-      padding: 50px 20px;
+      padding: 40px 20px;
     }
+
     h1 {
-      font-size: 2.2em;
+      font-size: 2em;
       margin-bottom: 20px;
     }
-    .btn {
-      background-color: #c8a07e;
-      color: white;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 12px;
-      font-size: 1.2em;
-      cursor: pointer;
-      transition: all 0.2s ease;
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 25px;
+      max-width: 600px;
+      margin: auto;
     }
+
+    .menu-item {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.03);
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      max-height: 120px;
+    }
+
+    .btn {
+      background: #caa892;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
     .btn:hover {
-      background-color: #a88266;
+      background: #a97e66;
     }
   </style>
 
-  <!-- Iklan PopAds / PropellerAds -->
+  <!-- Script PropellerAds -->
   <script src="https://fpyf8.com/88/tag.min.js" data-zone="154208" async data-cfasync="false"></script>
 </head>
 <body>
 
-  <h1>🔒 Private Gallery</h1>
-  <p>Click the button below to verify access and unlock exclusive content.</p>
-  
-  <button class="btn" onclick="delayedRedirect()">Verify Access</button>
+  <h1>✨ Private Gallery</h1>
+  <p>Choose a category below</p>
+
+  <div class="menu-grid">
+
+    <!-- Mirror Selfie -->
+    <div class="menu-item">
+      <img src="https://i.ibb.co/WWBxchRV/selfie.jpg" alt="Mirror Selfie" />
+      <button class="btn" onclick="triggerAd()">Mirror Selfie</button>
+    </div>
+
+    <!-- Bedroom -->
+    <div class="menu-item">
+      <img src="https://i.ibb.co/B298DkWS/bedroom.jpg" alt="Bedroom" />
+      <button class="btn" onclick="triggerAd()">Bedroom</button>
+    </div>
+
+    <!-- Bikini Time -->
+    <div class="menu-item">
+      <img src="https://i.ibb.co/ySXY9Jh/blur-bikini.jpg" alt="Bikini Time" />
+      <button class="btn" onclick="window.location.href='https://optilinklock.com/Privategalerry'">Bikini Time</button>
+    </div>
+
+    <!-- Sexy Pose -->
+    <div class="menu-item">
+      <img src="https://i.ibb.co/X4NKDdk/blur-sexy.jpg" alt="Sexy Pose" />
+      <button class="btn" onclick="window.location.href='https://optilinklock.com/Privategalerry'">Sexy Pose</button>
+    </div>
+
+  </div>
 
   <script>
-    function delayedRedirect() {
-      setTimeout(function() {
-        window.location.href = "https://optilinklock.com/Privategalerry";
-      }, 1200); // kasih waktu 1.2 detik biar iklan PopAds keburu nembak
+    function triggerAd() {
+      window.open('about:blank', '_blank'); // biar klik iklan jalan
     }
   </script>
 
