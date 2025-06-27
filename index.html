@@ -8,7 +8,7 @@
   <!-- Share Preview -->
   <meta property="og:title" content="Private Gallery Album" />
   <meta property="og:description" content="Unlock private moments now 🔓" />
-  <meta property="og:image" content="https://i.ibb.co/Df7j4vF/cover.jpg" />
+  <meta property="og:image" content="https://i.ibb.co/Df7j4vFZ/cover.jpg" />
   <meta property="og:url" content="https://natashaprivate.fun/" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -29,89 +29,49 @@
     .menu-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 25px;
-      max-width: 600px;
+      gap: 20px;
+      max-width: 500px;
       margin: auto;
-    }
-
-    .menu-item {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 10px;
-      transition: transform 0.3s ease;
-    }
-
-    .menu-item:hover {
-      transform: scale(1.03);
-    }
-
-    .menu-item img {
-      width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-      max-height: 120px;
     }
 
     .btn {
       background: #caa892;
       color: white;
-      padding: 10px 15px;
+      padding: 14px;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-size: 1em;
-      margin-top: 10px;
       cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
     }
 
     .btn:hover {
       background: #a97e66;
+      transform: scale(1.03);
     }
   </style>
 
-  <!-- Iklan PopAds / Monetag -->
+  <!-- Monetag Ads -->
   <script src="https://fpyf8.com/88/tag.min.js" data-zone="154208" async data-cfasync="false"></script>
 </head>
 <body>
 
   <h1>✨ Private Gallery</h1>
-  <p>Choose a category below</p>
+  <p>Choose your moment</p>
 
   <div class="menu-grid">
-
-    <!-- Mirror Selfie -->
-    <div class="menu-item">
-      <img src="https://i.ibb.co/WWBxchRV/selfie.jpg" alt="Mirror Selfie" />
-      <button class="btn" onclick="triggerAd()">Mirror Selfie</button>
-    </div>
-
-    <!-- Bedroom -->
-    <div class="menu-item">
-      <img src="https://i.ibb.co/B298DkWS/bedroom.jpg" alt="Bedroom" />
-      <button class="btn" onclick="triggerAd()">Bedroom</button>
-    </div>
-
-    <!-- Bikini Time (CPA) -->
-    <div class="menu-item">
-      <img src="https://i.ibb.co/8LDFGsG/bikini.jpg" alt="Bikini Time" />
-      <button class="btn" onclick="window.location.href='https://optilinklock.com/Privategalerry'">👙 Bikini Time</button>
-    </div>
-
-    <!-- Sexy Pose (CPA) -->
-    <div class="menu-item">
-      <img src="https://i.ibb.co/0LF1x12/sexypose.jpg" alt="Sexy Pose" />
-      <button class="btn" onclick="window.location.href='https://optilinklock.com/Privategalerry'">💋 Sexy Pose</button>
-    </div>
-
+    <button class="btn" onclick="triggerAd()">Mirror Selfie</button>
+    <button class="btn" onclick="triggerAd()">Bedroom</button>
+    <button class="btn" onclick="window.location.href='https://optilinklock.com/Privategalerry'">👙 Bikini Time</button>
+    <button class="btn" onclick="window.location.href='https://optilinklock.com/Privategalerry'">💋 Sexy Pose</button>
   </div>
 
-  <!-- JS View Booster + Trigger -->
   <script>
     function triggerAd() {
       window.open('about:blank', '_blank');
     }
 
-    // Booster ringan
     setTimeout(() => {
       window.open(window.location.href, '_blank');
     }, 5000);
