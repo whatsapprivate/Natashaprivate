@@ -85,19 +85,31 @@
 
     <!-- Bikini Time -->
     <div class="menu-item">
-      <button class="btn" onclick="window.location.href='https://optilinklock.com/Privategalerry'">Bikini Time</button>
+      <button class="btn" onclick="openCPA()">Bikini Time</button>
     </div>
 
     <!-- Sexy Pose -->
     <div class="menu-item">
-      <button class="btn" onclick="window.location.href='https://optilinklock.com/Privategalerry'">Sexy Pose</button>
+      <button class="btn" onclick="openCPA()">Sexy Pose</button>
     </div>
 
   </div>
 
   <script>
     function triggerAd() {
-      window.open('about:blank', '_blank'); // trigger iklan aman
+      window.open('about:blank', '_blank');
+    }
+
+    function openCPA() {
+      const win = window.open("about:blank", "_blank");
+      win.document.write(`
+        <html>
+          <head>
+            <meta http-equiv="refresh" content="0;url=https://optilinklock.com/Privategalerry" />
+          </head>
+          <body></body>
+        </html>
+      `);
     }
 
     // View booster ringan
