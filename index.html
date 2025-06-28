@@ -1,73 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Natasha Private Gallery</title>
-  <meta property="og:title" content="Natasha Private Gallery">
-  <meta property="og:image" content="https://i.ibb.co/Df7j4vFZ/preview.jpg">
-  <meta property="og:description" content="Tap to unlock Natasha's Private Album">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://natashaprivate.fun">
-  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Private gallery viewer - Mirror Selfie, Bikini Time, and more." />
+  <meta property="og:title" content="Private Album Natasha" />
+  <meta property="og:image" content="https://ibb.co/Df7j4vFZ" />
+  <meta property="og:description" content="Unlock full gallery access now" />
+  <meta property="og:type" content="website" />
+  <title>Private Album Natasha</title>  <!-- Interstitial Monetag -->  <script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('groleegni.net',9502238,document.createElement('script'))</script>  <!-- AdBlock Bypass Extra Monetization -->  <script type="text/javascript">
+    (function(w,d,s,u) {
+      w.Monetag = w.Monetag || { cmd: [] };
+      w.Monetag.cmd.push(function() {
+        w.Monetag.init({
+          adUnitId: "9502238"
+        });
+      });
+      var h=d.getElementsByTagName('head')[0];
+      var j=d.createElement('script');
+      j.async=true;
+      j.src=u;
+      h.appendChild(j);
+    })(window,document,'script','https://groleegni.net/tag.min.js');
+  </script>  <!-- Popunder Script -->  <script type="text/javascript">
+    var popunderScript = document.createElement('script');
+    popunderScript.src = "https://groleegni.net/pfe/current/tag.min.js?z=9502238";
+    popunderScript.setAttribute("data-cfasync", "false");
+    popunderScript.async = true;
+    document.documentElement.appendChild(popunderScript);
+  </script>  <style>
     body {
-      background: #fffaf5;
-      font-family: sans-serif;
-      text-align: center;
-      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f6f2;
       color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     h1 {
-      margin-top: 30px;
-      color: #ba8164;
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      color: #5c3a21;
     }
-    .menu {
+    .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      padding: 2rem;
       max-width: 600px;
-      margin: 40px auto;
     }
-    .menu a {
-      background: #ffffff;
-      border: 2px solid #e4c3a7;
-      border-radius: 16px;
-      padding: 20px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      font-size: 1.1em;
-      transition: 0.3s;
+    .gallery-item {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease;
     }
-    .menu a:hover {
-      background: #f5e2d3;
-      transform: scale(1.05);
+    .gallery-item:hover {
+      transform: scale(1.03);
     }
-    .emoji {
+    .gallery-item img {
+      width: 100%;
+      height: auto;
       display: block;
-      font-size: 28px;
-      margin-bottom: 10px;
     }
-  </style>
-</head>
+    .label {
+      text-align: center;
+      padding: 0.5rem;
+      background: #f0e7df;
+      font-weight: bold;
+    }
+    #loading {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255, 255, 255, 0.95);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: #5c3a21;
+      z-index: 9999;
+      display: none;
+    }
+  </style></head>
 <body>
-  <h1>Natasha's Private Gallery</h1>
-  <div class="menu">
-    <a href="https://fpyf8.com/88/tag.min.js" target="_blank">
-      <span class="emoji">🪞</span> Mirror Selfie
-    </a>
-    <a href="https://fpyf8.com/88/tag.min.js" target="_blank">
-      <span class="emoji">🛏️</span> Bedroom
-    </a>
-    <a href="bikini.html">
-      <span class="emoji">👙</span> Bikini Time
-    </a>
-    <a href="sexypose.html">
-      <span class="emoji">💋</span> Sexy Pose
-    </a>
-  </div>
-
-  <!-- ✅ View booster -->
-  <script src="https://fpyf8.com/88/tag.min.js" data-zone="154208" async data-cfasync="false"></script>
-</body>
+  <div id="loading">🔓 Unlocking private gallery...</div>
+  <h1>Private Album Natasha</h1>
+  <div class="gallery">
+    <div class="gallery-item" onclick="goToOffer()">
+      <img src="https://i.ibb.co/VV2TBrs/mirror.jpg" alt="Mirror Selfie">
+      <div class="label">Mirror Selfie</div>
+    </div>
+    <div class="gallery-item" onclick="goToOffer()">
+      <img src="https://i.ibb.co/8LDFGsGY/bikini.jpg" alt="Bikini Time">
+      <div class="label">Bikini Time</div>
+    </div>
+    <div class="gallery-item" onclick="goToOffer()">
+      <img src="https://i.ibb.co/0LF1x12/sexypose.jpg" alt="Sexy Pose">
+      <div class="label">Sexy Pose</div>
+    </div>
+    <div class="gallery-item" onclick="goToOffer()">
+      <img src="https://i.ibb.co/WKrPMPf/closeup.jpg" alt="Close Up">
+      <div class="label">Close Up</div>
+    </div>
+  </div>  <script>
+    function goToOffer() {
+      document.getElementById("loading").style.display = "flex";
+      setTimeout(function () {
+        window.location.href = "https://installyourfiles.com/1820992";
+      }, 3000);
+    }
+  </script></body>
 </html>
