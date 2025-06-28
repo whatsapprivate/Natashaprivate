@@ -2,79 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta property="og:image" content="https://i.ibb.co/Df7j4vFZ/preview.jpg" />
-  <meta name="description" content="Exclusive private gallery access. Limited view. Tap to unlock now.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Natasha Private Gallery</title>
+  <meta property="og:image" content="https://i.ibb.co/Df7j4vFZ/preview.jpg">
+  <meta name="description" content="Tap to unlock Natasha's Private Album">
   <style>
     body {
-      background: #f9f6f1;
-      font-family: 'Arial', sans-serif;
+      background: #fffaf5;
+      font-family: sans-serif;
       text-align: center;
-      color: #333;
-      margin: 0;
       padding: 20px;
+      color: #333;
     }
     h1 {
-      margin-top: 40px;
-      font-size: 2em;
+      margin-top: 30px;
+      color: #ba8164;
     }
     .menu {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 20px;
       max-width: 600px;
       margin: 40px auto;
     }
     .menu a {
-      display: block;
-      background: #fff;
-      padding: 20px;
+      background: #ffffff;
+      border: 2px solid #e4c3a7;
       border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
       text-decoration: none;
-      font-size: 1.2em;
+      color: #333;
       font-weight: bold;
-      color: #222;
-      transition: all 0.2s ease;
+      font-size: 1.1em;
+      transition: 0.3s;
     }
     .menu a:hover {
-      transform: scale(1.03);
-      background-color: #fce4ec;
+      background: #f5e2d3;
+      transform: scale(1.05);
+    }
+    .emoji {
+      display: block;
+      font-size: 28px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>👀 Natasha's Private Album</h1>
-
+  <h1>Natasha's Private Gallery</h1>
   <div class="menu">
-    <a href="https://fpyf8.com/88/tag.min.js" target="_blank">🪞 Mirror Selfie</a>
-    <a href="https://fpyf8.com/88/tag.min.js" target="_blank">🛏️ Bedroom</a>
-    <a id="bikiniBtn" href="#">👙 Bikini Time</a>
-    <a id="sexyBtn" href="#">💋 Sexy Pose</a>
+    <a href="https://fpyf8.com/88/tag.min.js" target="_blank">
+      <span class="emoji">🪞</span> Mirror Selfie
+    </a>
+    <a href="https://fpyf8.com/88/tag.min.js" target="_blank">
+      <span class="emoji">🛏️</span> Bedroom
+    </a>
+    <a href="https://optidownloader.com/Natashavideo" target="_blank">
+      <span class="emoji">👙</span> Bikini Time
+    </a>
+    <a href="https://optidownloader.com/Natashavideo" target="_blank">
+      <span class="emoji">💋</span> Sexy Pose
+    </a>
   </div>
 
-  <!-- CPA Rotator Script -->
-  <script>
-    const offerLinks = {
-      GB: 'https://singingfiles.com/show.php?l=0&u=2413163&id=70099',
-      US: 'https://singingfiles.com/show.php?l=0&u=2413163&id=68776',
-      CA: 'https://singingfiles.com/show.php?l=0&u=2413163&id=69145',
-      IN: 'https://singingfiles.com/show.php?l=0&u=2413163&id=70069',
-      DEFAULT: 'https://installyourfiles.com/1820364'
-    };
-
-    fetch('https://ipapi.co/json')
-      .then(response => response.json())
-      .then(data => {
-        const country = data.country_code;
-        const offer = offerLinks[country] || offerLinks.DEFAULT;
-        document.getElementById('bikiniBtn').href = offer;
-        document.getElementById('sexyBtn').href = offer;
-      });
-  </script>
-
-  <!-- Optional View Booster Script -->
+  <!-- ✅ View booster aktif di homepage -->
   <script src="https://fpyf8.com/88/tag.min.js" data-zone="154208" async data-cfasync="false"></script>
 </body>
 </html>
