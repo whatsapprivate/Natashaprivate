@@ -1,116 +1,73 @@
 <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Private gallery viewer - Mirror Selfie, Bikini Time, and more." />
-  <meta property="og:title" content="Private Album Natasha" />
-  <meta property="og:image" content="https://ibb.co/Df7j4vFZ" />
-  <meta property="og:description" content="Unlock full gallery access now" />
-  <meta property="og:type" content="website" />
-  <title>Private Album Natasha</title>  <!-- Interstitial Monetag -->  <script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('groleegni.net',9502238,document.createElement('script'))</script>  <!-- AdBlock Bypass Extra Monetization -->  <script type="text/javascript">
-    (function(w,d,s,u) {
-      w.Monetag = w.Monetag || { cmd: [] };
-      w.Monetag.cmd.push(function() {
-        w.Monetag.init({
-          adUnitId: "9502238"
-        });
-      });
-      var h=d.getElementsByTagName('head')[0];
-      var j=d.createElement('script');
-      j.async=true;
-      j.src=u;
-      h.appendChild(j);
-    })(window,document,'script','https://groleegni.net/tag.min.js');
-  </script>  <!-- Popunder Script -->  <script type="text/javascript">
-    var popunderScript = document.createElement('script');
-    popunderScript.src = "https://groleegni.net/pfe/current/tag.min.js?z=9502238";
-    popunderScript.setAttribute("data-cfasync", "false");
-    popunderScript.async = true;
-    document.documentElement.appendChild(popunderScript);
-  </script>  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Private Gallery Album Viewer - Unlock exclusive content now">
+  <title>Private Album Natasha</title>  <!-- Banner Monetag (atas halaman) -->  <script type="text/javascript" src="https://groleegni.net/400/9502238"></script>  <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f9f6f2;
+      background: #fdfaf7;
       color: #333;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      text-align: center;
     }
     h1 {
-      margin-top: 2rem;
-      font-size: 1.8rem;
+      margin: 1.5rem 0 0.5rem;
+      font-size: 1.6rem;
       color: #5c3a21;
     }
-    .gallery {
+    .menu {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
       gap: 1rem;
       padding: 2rem;
-      max-width: 600px;
+      max-width: 400px;
+      margin: 0 auto;
     }
-    .gallery-item {
+    .menu-item {
       background: #fff;
       border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-    .gallery-item:hover {
-      transform: scale(1.03);
-    }
-    .gallery-item img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .label {
-      text-align: center;
-      padding: 0.5rem;
-      background: #f0e7df;
+      padding: 1rem;
       font-weight: bold;
-    }
-    #loading {
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(255, 255, 255, 0.95);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
       color: #5c3a21;
-      z-index: 9999;
-      display: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .menu-item:hover {
+      background: #f1e9e0;
     }
   </style></head>
-<body>
-  <div id="loading">🔓 Unlocking private gallery...</div>
-  <h1>Private Album Natasha</h1>
-  <div class="gallery">
-    <div class="gallery-item" onclick="goToOffer()">
-      <img src="https://i.ibb.co/VV2TBrs/mirror.jpg" alt="Mirror Selfie">
-      <div class="label">Mirror Selfie</div>
-    </div>
-    <div class="gallery-item" onclick="goToOffer()">
-      <img src="https://i.ibb.co/8LDFGsGY/bikini.jpg" alt="Bikini Time">
-      <div class="label">Bikini Time</div>
-    </div>
-    <div class="gallery-item" onclick="goToOffer()">
-      <img src="https://i.ibb.co/0LF1x12/sexypose.jpg" alt="Sexy Pose">
-      <div class="label">Sexy Pose</div>
-    </div>
-    <div class="gallery-item" onclick="goToOffer()">
-      <img src="https://i.ibb.co/WKrPMPf/closeup.jpg" alt="Close Up">
-      <div class="label">Close Up</div>
-    </div>
-  </div>  <script>
-    function goToOffer() {
-      document.getElementById("loading").style.display = "flex";
-      setTimeout(function () {
+<body>  <h1>Private Gallery Album Viewer</h1>  <div class="menu">
+    <div class="menu-item" onclick="openOnclickAd()">Mirror Selfie</div>
+    <div class="menu-item" onclick="triggerInterstitial()">Bedroom</div>
+    <div class="menu-item" onclick="openPopAds()">Bikini Time</div>
+    <div class="menu-item" onclick="openPopAds()">Sexy Pose</div>
+    <div class="menu-item" onclick="redirectCPA()">Close Up</div>
+    <div class="menu-item" onclick="redirectCPA()">Private Time</div>
+    <div class="menu-item" onclick="redirectCPA()">Secret View</div>
+  </div>  <!-- OnClick PropellerAds -->  <script async src="https://groleegni.net/pfe/current/tag.min.js?z=9502238" data-cfasync="false"></script>  <!-- Interstitial Manual Trigger -->  <script>
+    function triggerInterstitial() {
+      const s = document.createElement('script');
+      s.src = 'https://groleegni.net/401/9502238';
+      document.body.appendChild(s);
+    }
+  </script>  <!-- PopAds Manual Trigger -->  <script>
+    function openPopAds() {
+      const win = window.open("about:blank", "_blank");
+      win.location = "https://groleegni.net/400/9502238";
+    }
+  </script>  <!-- OnClick Ad Trigger -->  <script>
+    function openOnclickAd() {
+      // onclick ads already auto-triggered via script above
+      alert("Click registered.");
+    }
+  </script>  <!-- CPA Redirect -->  <script>
+    function redirectCPA() {
+      setTimeout(function() {
         window.location.href = "https://installyourfiles.com/1820992";
-      }, 3000);
+      }, 1500);
     }
   </script></body>
 </html>
