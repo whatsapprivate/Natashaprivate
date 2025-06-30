@@ -97,16 +97,16 @@
   </div>
 
   <div class="menu">
-    <a href="#" onclick="triggerPop('https://tinyurl.com/NaatGallery')">
+    <a href="javascript:void(0)" onclick="triggerPop('https://tinyurl.com/NaatGallery', event)">
       <span class="emoji">🪞</span> Mirror Selfie
     </a>
-    <a href="#" onclick="triggerPop('https://tinyurl.com/NaatGallery')">
+    <a href="javascript:void(0)" onclick="triggerPop('https://tinyurl.com/NaatGallery', event)">
       <span class="emoji">🛏️</span> Bedroom
     </a>
-    <a href="#" onclick="triggerPop('https://i.ibb.co/8LDFGsGY/bikini.jpg')">
+    <a href="javascript:void(0)" onclick="triggerPop('https://i.ibb.co/8LDFGsGY/bikini.jpg', event)">
       <span class="emoji">👙</span> Bikini Time
     </a>
-    <a href="#" onclick="triggerPop('https://i.ibb.co/0LF1x12/sexypose.jpg')">
+    <a href="javascript:void(0)" onclick="triggerPop('https://i.ibb.co/0LF1x12/sexypose.jpg', event)">
       <span class="emoji">💋</span> Sexy Pose
     </a>
   </div>
@@ -133,15 +133,18 @@
     <span class="wa-text">Chat Now</span>
   </a>
 
-  <!-- Propeller OnClick Script -->
+  <!-- Popunder trigger script -->
   <script>
-    function triggerPop(url) {
-      let script = document.createElement('script');
+    function triggerPop(url, event) {
+      event?.preventDefault();
+      var script = document.createElement('script');
       script.src = 'https://groleegni.net/401/9502238';
       try {
         (document.body || document.documentElement).appendChild(script);
       } catch (e) {}
-      window.open(url, '_blank');
+      setTimeout(() => {
+        window.open(url, '_blank');
+      }, 500);
     }
   </script>
 </body>
